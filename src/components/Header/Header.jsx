@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../../assets/POWERLIFTING ASSOCIATIONOF TELANGANA.png';
-
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,10 +29,13 @@ const Header = () => {
       <div className="header-container border-b border-white/10">
         <div className="logo-container">
           <div className="logo">
-            <div className="logo-container">
-               <img src={logo} alt="Powerlifting Association Logo" className="header-logo" />
+            <div className="logo-circle">
+              <img src="/images/icon.png" alt="TPF Logo" />
             </div>
-
+          </div>
+          <div className="logo-text">
+            <h1>Telangana Powerlifting Federation</h1>
+            <span>Strength • Unity • Excellence</span>
           </div>
         </div>
         
@@ -46,8 +47,7 @@ const Header = () => {
             <li><Link to="/gallery" onClick={() => setIsMenuOpen(false)}>Gallery</Link></li>
             <li><Link to="/news" onClick={() => setIsMenuOpen(false)}>News</Link></li>
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
-            <li><Link to="/bank" onClick={() => setIsMenuOpen(false)}>Bank</Link></li>
-            </ul>
+          </ul>
         </nav>
         
         <button 
