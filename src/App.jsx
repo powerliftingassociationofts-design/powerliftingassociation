@@ -8,6 +8,7 @@ import Events from './pages/Events/Events'
 import Gallery from './pages/Gallery/Gallery'
 import News from './pages/News/News'
 import Contact from './pages/Contact/Contact'
+import BankAccountDetails from './pages/Bank/BankAccountDetails'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/bank" element={<BankAccountDetails />} />
         </Routes>
       </main>
       <Footer />
